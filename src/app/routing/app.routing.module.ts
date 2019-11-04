@@ -17,8 +17,7 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegistComponent
-  }, 
-  {
+  }, {
     path: 'admin',
     loadChildren: '../admin/admin.module#AdminModule',
     canLoad: [AuthGuard]

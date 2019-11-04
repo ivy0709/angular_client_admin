@@ -10,7 +10,7 @@ export class BaseService {
 
   isAdmin(): Boolean {
     const a = localStorage.getItem('is_admin');
-    return a === 'Admin' || a === 'Track' || a === 'admin' || a === 'track';
+    return a === 'Admin' || a === 'Track' || a === 'admin' || a === 'track' || a === 'test1';
   }
 
   // 只要不包含sessions 都加入auth 头

@@ -17,6 +17,7 @@ export class UserService extends BaseService {
       'username': username,
       'password': password
     };
+
     this.post(sessionUrl, data,
       (value: any) => {
         localStorage.setItem('user_id', value['data']['user_id']);
@@ -26,9 +27,10 @@ export class UserService extends BaseService {
         this.ms.success('登录成功!');
         next(value);
       }, (error: any) => {
+        debugger
         if (error instanceof HttpErrorResponse) {
-          debugger
-          this.ms.error('获取数据异常:!!! ' + error.statusText);
+
+          this.ms.error('获取数据异常: ' + error.statusText);
         } else {
           this.ms.error('获取数据异常!');
         }
