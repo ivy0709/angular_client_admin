@@ -23,7 +23,7 @@
     "@angular/router": "^5.2.0",
     "angular-froala-wysiwyg": "2.8.1",
     "angular2-jwt": "^0.2.3",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "core-js": "^2.4.1",
     "handlebars": "^4.0.14",
     "js-yaml": "^3.13.1",
